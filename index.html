@@ -1,100 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Resume Template</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			font-size: 16px;
-			line-height: 1.5;
-			color: #333;
-			margin: 0;
-			padding: 0;
-		}
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Resume</title>
+		<style>
+			/* Styles for the navigation bar */
+			nav {
+				background-color: #333;
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				width: 200px;
+				padding-top: 50px;
+			}
+			nav a {
+				display: block;
+				color: #fff;
+				padding: 10px;
+				text-decoration: none;
+				font-weight: bold;
+				font-size: 18px;
+				border-bottom: 1px solid #fff;
+			}
+			nav a:hover {
+				background-color: #555;
+			}
 
-		.container {
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 40px;
-			background-color: #f5f5f5;
-			box-shadow: 0 0 10px rgba(0,0,0,.3);
-			border-radius: 5px;
-		}
+			/* Styles for the main content */
+			main {
+				margin-left: 200px;
+				padding: 50px;
+			}
+			section {
+				margin-bottom: 50px;
+			}
+			section h2 {
+				margin-bottom: 20px;
+			}
 
-		h1 {
-			font-size: 32px;
-			font-weight: bold;
-			margin-top: 0;
-		}
-
-		h2 {
-			font-size: 24px;
-			font-weight: bold;
-			margin-top: 0;
-			margin-bottom: 10px;
-		}
-
-		p {
-			margin: 0;
-			padding: 0;
-		}
-
-		ul {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-		}
-
-		ul li {
-			margin-bottom: 5px;
-		}
-
-		section {
-			margin-bottom: 30px;
-		}
-
-		.section-header {
-			display: flex;
-			align-items: center;
-			margin-bottom: 10px;
-		}
-
-		.section-header h2 {
-			margin-right: 10px;
-		}
-
-		.section-header .separator {
-			flex-grow: 1;
-			height: 1px;
-			background-color: #333;
-			margin-left: 10px;
-		}
-
-		.section-content {
-			margin-left: 30px;
-		}
-	</style>
-</head>
-<body>
-	<div class="container">
-		<header>
-			<h1>John Doe</h1>
-			<p>Software Developer</p>
-			<p>Email: john.doe@example.com</p>
-			<p>Phone: (123) 456-7890</p>
-			<p>Address: 123 Main Street, Anytown, USA</p>
-		</header>
+			/* Hide all sections except the first one by default */
+			section:not(:first-of-type) {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a href="#header">Header</a>
+			<a href="#skills">Skills</a>
+			<a href="#experience">Experience</a>
+			<a href="#education">Education</a>
+		</nav>
 		<main>
-			<section>
+			<section id="header">
 				<div class="section-header">
-					<h2>Summary</h2>
-					<div class="separator"></div>
-				</div>
-				<div class="section-content">
-					<p>A software developer with 5+ years of experience in building web applications using modern technologies such as React, Node.js, and MongoDB.</p>
+					<h1>John Doe</h1>
+					<h2>Software Developer</h2>
+					<p>
+						123 Main St. | Anytown, USA 12345 | (123) 456-7890 |
+						john.doe@email.com
+					</p>
 				</div>
 			</section>
-			<section>
+			<section id="skills">
 				<div class="section-header">
 					<h2>Skills</h2>
 					<div class="separator"></div>
@@ -104,44 +74,58 @@
 						<li>JavaScript</li>
 						<li>React</li>
 						<li>Node.js</li>
-						<li>MongoDB</li>
-						<li>HTML</li>
-						<li>CSS</li>
+						<li>HTML/CSS</li>
+						<li>Agile development methodologies</li>
 						<li>Git</li>
-						<li>Agile development</li>
 					</ul>
 				</div>
 			</section>
-			<section>
+			<section id="experience">
 				<div class="section-header">
 					<h2>Experience</h2>
 					<div class="separator"></div>
-
-					
-
-			</div>
-			<div class="section-content">
-				<h3>Software Developer</h3>
-				<p>ABC Company</p>
-				<p>January 2019 - Present</p>
-				<ul>
-					<li>Developed and maintained a web-based project management tool using React, Node.js, and MongoDB.</li>
-					<li>Implemented new features and improved performance and scalability of the application.</li>
-					<li>Collaborated with cross-functional teams to ensure the successful delivery of projects.</li>
-					<li>Utilized Agile development methodologies to manage project timelines and milestones.</li>
-				</ul>
-			</div>
-		</section>
-		<section>
-			<div class="section-header">
-				<h2>Education</h2>
-				<div class="separator"></div>
-			</div>
-			<div class="section-content">
-				<h3>Bachelor of Science in Computer Science</h3>
-				<p>XYZ University</p>
-				<p>Graduated May 2018</p>
-			</div>
-		</section>
-	</main>
-</div>
+				</div>
+				<div class="section-content">
+					<h3>Software Developer</h3>
+					<p>ABC Company</p>
+					<p>January 2019 - Present</p>
+					<ul>
+						<li>Developed and maintained a web-based project management tool using React, Node.js, and MongoDB.</li>
+						<li>Implemented new features and improved performance and scalability of the application.</li>
+						<li>Collaborated with cross-functional teams to ensure the successful delivery of projects.</li>
+						<li>Utilized Agile development methodologies to manage project timelines and milestones.</li>
+					</ul>
+				</div>
+		
+<section id="education">
+				<div class="section-header">
+					<h2>Education</h2>
+					<div class="separator"></div>
+				</div>
+				<div class="section-content">
+					<h3>Bachelor of Science in Computer Science</h3>
+					<p>XYZ University</p>
+					<p>Graduated May 2018</p>
+				</div>
+			</section>
+		</main>
+		<script>
+			// Add event listeners to the navigation links
+			const navLinks = document.querySelectorAll("nav a");
+			navLinks.forEach((link) => {
+				link.addEventListener("click", (event) => {
+					event.preventDefault();
+					// Hide all sections
+					const sections = document.querySelectorAll("section");
+					sections.forEach((section) => {
+						section.style.display = "none";
+					});
+					// Show the selected section
+					const targetId = link.getAttribute("href");
+					const targetSection = document.querySelector(targetId);
+					targetSection.style.display = "block";
+				});
+			});
+		</script>
+	</body>
+</html>
